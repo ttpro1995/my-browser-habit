@@ -1,7 +1,8 @@
 from flask import Flask, request
 from data_ingestion_to_file import FileIngestion
-
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app) # fix CORS policy
 ingestion = FileIngestion()
 
 
