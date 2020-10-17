@@ -1,5 +1,5 @@
 from flask import Flask, request
-from flask.data_ingestion_to_file import FileIngestion
+from data_ingestion_to_file import FileIngestion
 
 app = Flask(__name__)
 ingestion = FileIngestion()

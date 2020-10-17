@@ -12,3 +12,4 @@ class FileIngestion:
         file = open(file_path, 'a')
         data_line = str(data['timestamp']) + "," + str(data['url'])
         file.write(data_line + "\n")
+        file.close()
