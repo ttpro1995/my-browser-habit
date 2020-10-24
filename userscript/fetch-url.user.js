@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name     fetch-url
 // @version  1
-// @match    *://*/*
+// @include  *
 // @grant    none
 // ==/UserScript==
 
 // SET URL to web-server HERE
 var yourUrl= "http://127.0.0.1:6789/log-url";
+
 
 
 // sample data
@@ -17,3 +18,4 @@ var xhr = new XMLHttpRequest();
 xhr.open("POST", yourUrl, true);
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.send(JSON.stringify(data));
+console.log("sent " + JSON.stringify(data));
