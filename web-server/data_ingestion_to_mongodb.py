@@ -12,6 +12,8 @@ class MongoIngestion:
         db = self.client[self.database_name]
         collection = db['visited']
         insert_result = collection.insert_one(data)
+        print(self.client)
+        print(collection)
         print(insert_result.acknowledged)
         print(insert_result.inserted_id)
 
