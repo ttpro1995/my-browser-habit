@@ -6,8 +6,8 @@
 // ==/UserScript==
 
 // SET URL to web-server HERE
-var yourUrl= "http://127.0.0.1:6789/log-url";
-
+// var yourUrl= "http://127.0.0.1:6789/log-url";
+var yourUrl= "https://my-personal-seedbox.de.r.appspot.com/log-url";
 
 
 // sample data
